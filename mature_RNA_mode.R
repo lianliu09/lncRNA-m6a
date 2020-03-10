@@ -1,6 +1,12 @@
 library(randomForest)
 library(caret)
 library(pROC)
+#train_lnc:the train data for lncRNA
+#train_m: the train data for mRNA
+#test: the test data
+#alpha: the alpha used in ensemble predictor
+#dir: the directory where the result files are saved
+#filename: the result filename 
 mature_rf<-function(train_lnc,train_m,test,alpha,dir,filename){
   #train
   print("Predicting...")
